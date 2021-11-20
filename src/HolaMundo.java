@@ -41,11 +41,31 @@ public class HolaMundo {
         System.out.println("Esto es un saludo: " + saludo);
 
         //Scanner
+        System.out.println("digita un número");
         Scanner sc = new Scanner(System.in);
         int respuesta = Integer.valueOf(sc.nextLine());
 
         System.out.println(respuesta);
 
+        //Bucles
+        int iterador = 0;
+        while(iterador < 5){
+            System.out.println(iterador);
+            System.out.println("------------while");
+            iterador++;
+        }
+
+        for (int i =0; i<5; i++){
+            System.out.println(iterador);
+            System.out.println("------------for");
+        }
+
+        //Arreglos
+        String arr[] = new String[3];
+        for (int i =0; i< arr.length;i++){
+            arr[i]= "hola"+i;
+            System.out.println("posición "+(i+1)+arr[i]);
+        }
 
 
 
