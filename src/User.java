@@ -1,4 +1,4 @@
 public class User {
     static int id;
-    private String name;
+    static String name;
 }

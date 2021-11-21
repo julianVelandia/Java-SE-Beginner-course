@@ -20,7 +20,7 @@ public class Doctor extends User{
         System.out.println("El nombre del doctor es: "+name+" La especialidad es: "+speciality);
     }
 
-    public void showname(String newName){
+    public void showName(String newName){
         System.out.println("El nombre del doctor es: "+newName+" La especialidad es: "+speciality);
         this.name = newName;
     }
