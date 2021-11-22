@@ -1,9 +1,14 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
+
 public class Doctor extends User{
+    //Atributos
     private String speciality;
 
+    //Getter y Setter
     public String getSpeciality() {
         return speciality;
     }
@@ -12,7 +17,9 @@ public class Doctor extends User{
         this.speciality = speciality;
     }
 
-    public Doctor(String speciality) {
+    //Constructor
+    public Doctor(String name, String speciality) {
+        super(name);
         this.speciality = speciality;
     }
 
@@ -35,16 +42,11 @@ public class Doctor extends User{
     }
 
     public static class Appointment{
-        static int id;
         private Date date;
         private String LocalTime;
 
         public String getLocalTime() {
             return LocalTime;
-        }
-
-        public void setLocalTime(String localTime) {
-            LocalTime = localTime;
         }
 
         public Appointment(Date date, String localTime) {
